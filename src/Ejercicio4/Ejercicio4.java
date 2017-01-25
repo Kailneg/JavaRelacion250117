@@ -33,7 +33,7 @@ public class Ejercicio4 {
 	}
 	
 	public static double CalcularHipotenusa (double cateto1, double cateto2) {
-		double hipotenusa = Math.pow(cateto1, 2) + Math.pow(cateto2, 2);
+		double hipotenusa = Math.sqrt(Math.pow(cateto1, 2) + Math.pow(cateto2, 2));
 		hipotenusa = Math.sqrt(hipotenusa);
 		return hipotenusa;
 	}
