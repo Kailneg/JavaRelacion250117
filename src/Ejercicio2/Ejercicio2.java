@@ -28,7 +28,7 @@ public class Ejercicio2 {
 				System.out.println("Dato introducido no correcto.");
 				error = true;
 			}
-		} while (error);
+		} while (error || d <= 0);
 		
 		return d;
 	}

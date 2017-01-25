@@ -1,13 +1,14 @@
-package Ejercicio3;
+package Ejercicio4;
 
 import java.util.Scanner;
 
-public class Ejercicio3 {
+public class Ejercicio4 {
 
 	public static void main(String[] args) {
-		double dato = LeerNumero("Introduce Km/h:");
-		dato = KilometrosHoraAMetrosSegundo(dato);
-		System.out.println("M/s: " + dato);
+		double cateto1 = LeerNumero("Introduce cateto 1:");
+		double cateto2 = LeerNumero("Introduce cateto 2:");
+		double hipotenusa = CalcularHipotenusa(cateto1, cateto2);
+		System.out.println("Hipotenusa: " + hipotenusa);
 	}
 
 	public static double LeerNumero(String texto) {
@@ -31,7 +32,9 @@ public class Ejercicio3 {
 		return d;
 	}
 	
-	public static double KilometrosHoraAMetrosSegundo(double kmh) {
-		return kmh*0.27777777777778d;
+	public static double CalcularHipotenusa (double cateto1, double cateto2) {
+		double hipotenusa = Math.pow(cateto1, 2) + Math.pow(cateto2, 2);
+		hipotenusa = Math.sqrt(hipotenusa);
+		return hipotenusa;
 	}
 }
